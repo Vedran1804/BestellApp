@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Mama Mia</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/data.js"></script>
+    <script src="scripts/templates.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="renderPage()">
+
+   <header id="top">
+       <img src="img/logo.png" alt="Logo Main">
+   </header>
+
+   <div class="restaurant">
+       <img src="img/restaurant.png" alt="Restaurant Header" class="restaurant-pict">
+   </div>
+
+   <div class="restaurant-info">
+       <img src="img/logo.png" alt="Restaurant Logo" class="restaurant-logo">
+       <h1>Pizza Mama Mia</h1>
+       <div class="rating-stars">Bewertungen (4.8 / 5)</div>
+       <p class="description">Traditionelle italienische Küche • Pizza, Pasta und Desserts</p>
+       <div class="delivery-meta">Lieferung: 5.00€ • Min. Bestellwert: 15.00€</div>
+
+       <div class="category-nav">
+           <a href="#section-food">Pizza & Pasta</a> | 
+           <a href="#section-drink">Drinks</a> | 
+           <a href="#section-dessert">Dessert</a>
+       </div>
+   </div>
+   
+   <button id="floatingBasketBtn" onclick="openBasket()"> Warenkorb (<span id="floatingTotal">0.00€</span>)</button>
+
+   <div class="main-container">
+       
+       <div class="container1">
+           <div id="section-food" class="title section-food">
+               <h2><a href="#top" class="back-to-top">PIZZA & PASTA</a></h2>
+           </div>
+           <div class="box" id="menuContainer"></div>
+
+           <div id="section-drink" class="title section-drink">
+               <h2><a href="#top" class="back-to-top">DRINKS</a></h2>
+           </div>
+           <div class="box" id="drinksContainer"></div>
+
+           <div id="section-dessert" class="title section-dessert">
+               <h2><a href="#top" class="back-to-top">DESSERT</a></h2>
+           </div>
+           <div class="box" id="desertContainer"></div>
+       </div>
+       
+       <div id="basketAside" class="basket-aside">
+           <div class="basket-title-bar section-food">
+               <div class="basket-header">
+                   <h3>WARENKORB</h3>
+                   <button class="close-dialog-btn" onclick="closeBasket()">X</button>
+               </div>
+           </div>
+           <div class="basket-container">
+               <div id="basketOptionsTarget"></div>
+               
+               <hr>
+               <div class="basket-row"><p>Lieferkosten:</p><p>5.00€</p></div>
+               <div class="basket-row"><p>Gesamt:</p><p id="totalAmount">0.00€</p></div>
+               <button class="btn-bestellen" onclick="executeOrder()">BESTELLEN</button>
+           </div>
+       </div>
+
+   </div>
+
+   <footer>
+       <p>BestellApp</p>
+   </footer>
+    
+   <div id="orderOverlay" class="order-overlay">
+       <div class="order-modal">
+           <button class="close-modal-btn" onclick="closeSuccessMessage()">X</button>
+           <h3>Vielen Dank!</h3>
+           <p>Ihre Bestellung war erfolgreich!</p>
+       </div>
+   </div>
+
+</body>
+</html>
