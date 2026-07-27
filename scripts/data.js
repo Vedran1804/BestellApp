@@ -76,7 +76,7 @@ let options = [{
 
     { "name": "Schwarzwald Torte", 
       "price": 6.99, 
-      "img": "img/dishes/schwarzwaldtorte.png",
+      "img": "img/dishes/Schwarzwaldtorte.png",
       "amount": 1 }
   ]
 }];
