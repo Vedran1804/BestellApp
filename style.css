@@ -453,6 +453,12 @@ footer {
         padding-right: 0; 
     }
 
+    .restaurant-info {
+        width: 95%;
+        margin: 20px auto 10px auto;
+        border-radius: 12px;
+    }
+
     .basket-aside {
         display: none;
         position: fixed;
