@@ -146,6 +146,7 @@ header img {
     max-width: 1440px;
     margin: 0 auto;
     padding: 20px;
+    flex: 1;
 }
 
 .container1 {
@@ -369,9 +370,16 @@ header img {
 footer {
     background-color: black;
     color: lightgray;
-    text-align: center;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1440px;
     padding: 20px;
-    margin-top: 60px;
+    text-align: center;
 }
 
 #floatingBasketBtn, .close-dialog-btn { 
