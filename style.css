@@ -99,20 +99,20 @@ header img {
 }
 
 .rating-stars {
-    color: red;
+    color: black;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .description {
-    color: gray;
+    color: black;
     margin: 5px 0;
     font-size: 15px;
 }
 
 .delivery-meta {
     font-weight: bold;
-    color: gray;
+    color: black;
     margin-top: 5px;
     font-size: 14px;
 }
