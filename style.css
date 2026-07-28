@@ -71,6 +71,8 @@ header img {
 .restaurant-logo {
     width: 100px;
     height: auto;
+    margin-top: -80px;
+    position: relative;
 }
 
 .restaurant-logo-img {
@@ -112,13 +114,18 @@ header img {
 }
 
 .category-nav a {
-    color: darkorange;
+    color: darkblue;
     text-decoration: none;
     margin: 0 5px;
 }
 
 .category-nav a:hover {
     text-decoration: underline;
+}
+
+.navi {
+    color: rgba(244, 230, 212);
+    text-decoration: none;
 }
 
 .main-container {
@@ -143,7 +150,7 @@ header img {
     background-size: cover;
     padding: 60px 20px;
     text-align: center;
-    background-color: dimgray;
+    background-color: gray;
     border-radius: 12px 12px 0 0;
     margin-top: 35px;
 }
@@ -151,14 +158,11 @@ header img {
 .title h2 {
     margin: 0;
     font-size: 28px;
-    color: white;
-}
-
-.back-to-top {
-    color: white;
-    text-decoration: none;
-    display: block;
-    width: 100%;
+    color: blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 8px;
 }
 
 .section-food {
@@ -201,7 +205,7 @@ header img {
 
 .dish-title {
     font-weight: bold;
-    width: 100%; /* Daje tekstu punu širinu i on sam prelazi u novi red */
+    width: 100%; 
 }
 
 .food-logo {
@@ -267,12 +271,15 @@ header img {
 .basket-title-bar {
     padding: 18px 20px;
     border-radius: 6px 6px 0 0;
-    color: white;
-    background-color: darkorange;
+    color: blanchedalmond;
 }
 
 .basket-header h3 {
     margin: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 8px;
 }
 
 .basket-container {
