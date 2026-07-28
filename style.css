@@ -13,16 +13,26 @@ body {
     font-style: oblique;
     background-color: whitesmoke;
     color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: darkgoldenrod;
-    padding: 10px 20px;
     border-bottom: 1px solid lightgray;
+}
 
+.header-content {
+    width: 100%;
+    max-width: 1440px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header img {
